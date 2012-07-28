@@ -8,3 +8,6 @@ target
 /plugins
 /web-app/plugins
 /web-app/WEB-INF/classes
+target-eclipse
+.project
+.classpath
