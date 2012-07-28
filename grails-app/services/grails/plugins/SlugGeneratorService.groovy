@@ -53,16 +53,4 @@ class SlugGeneratorService {
             }
         }
     }
-    
-//    /**
-//     * Removes diacritical marks from string:
-//     * assert 'Ivan' == removeDiacriticalMarks('Iván')
-//     * 
-//     * @param string The string to remove the diacritical marks
-//     */
-//    private String removeDiacriticalMarks(String string) {
-//        Pattern p = Pattern.compile("\\p{InCombiningDiacriticalMarks}+", Pattern.UNICODE_CASE);
-//
-//        return Normalizer.normalize(string, Normalizer.Form.NFD).replaceAll(p, "");
-//    }
 }
