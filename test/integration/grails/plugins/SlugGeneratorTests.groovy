@@ -59,7 +59,7 @@ class SlugGeneratorTests {
     }
     
     @Test
-    void 'Cyrilic chars'() {
+    void 'Cyrillic chars'() {
         assert "иван" == slugGeneratorService.generateSlug(grails.plugins.DummyDomainClass.class, "name", "Иван")
     }
     
