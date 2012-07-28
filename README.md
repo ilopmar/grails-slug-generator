@@ -35,7 +35,6 @@ class Dummy {
 
 After this configuration you can use it:
 ``` groovy
-`
 def dummy = new Dummy(name:'Iván López').save()
 assert dummy.slug == 'ivan-lopez'
 
