@@ -45,3 +45,12 @@ assert dummyUpdated.slug == 'another-name'
 ```
 
 The plugin supports full UTF-8, so you can use, for instance, ciryllic chars or right-to-left writing. Check out the tests.
+
+Additional codec
+----------------
+
+The plugin also includes a SlugCodec that you can call like the other Grails builtin codecs
+
+``` groovy
+assert "ivan-lopez" == "Iván López!!".encodeAsSlug()
+```
