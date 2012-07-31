@@ -44,7 +44,7 @@ def dummyUpdated = Dummy.get(1)
 assert dummyUpdated.slug == 'another-name'
 ```
 
-The plugin supports full UTF-8, so you can use, for instance, ciryllic chars or right-to-left writing. Check out the tests.
+The plugin supports full UTF-8, so you can use, for instance, ciryllic chars or right-to-left writing. Check out [the tests](https://github.com/lmivan/grails-slug-generator/blob/master/test/integration/grails/plugins/SlugGeneratorTests.groovy).
 
 Additional codec
 ----------------
