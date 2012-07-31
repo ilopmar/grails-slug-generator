@@ -25,7 +25,7 @@ For example, instead of access to a user profile by id http://www.domain.com/use
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://grails.org/plugin/slug-generator"
+    def documentation = "https://github.com/lmivan/grails-slug-generator/blob/master/README.md"
 
     // Extra (optional) plugin metadata
 
@@ -42,7 +42,7 @@ For example, instead of access to a user profile by id http://www.domain.com/use
 //    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
 
     // Online location of the plugin's browseable source code.
-//    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
+    def scm = [ url: "https://github.com/lmivan/grails-slug-generator" ]
 
     def doWithWebDescriptor = { xml ->
         // TODO Implement additions to web.xml (optional), this event occurs before
