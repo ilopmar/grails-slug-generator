@@ -35,13 +35,16 @@ class Dummy {
 
 After this configuration you can use it:
 ``` groovy
-def dummy = new Dummy(name:'Iván López').save()
-assert dummy.slug == 'ivan-lopez'
+def dummy = new Dummy(name:"Iván López").save()
+assert dummy.slug == "ivan-lopez"
 
-dummy.name = 'Another name!!'
+dummy.name = "Another name!!"
 dummy.save(flush:true)
 def dummyUpdated = Dummy.get(1)
-assert dummyUpdated.slug == 'another-name'
+assert dummyUpdated.slug == "another-name"
+
+def dummy2 = new Dummy(name:"Iván López").save()
+assert dummy2.slug == "ivan-lopez-1"
 ```
 
 The plugin supports full UTF-8, so you can use, for instance, ciryllic chars or right-to-left writing. Check out [the tests](https://github.com/lmivan/grails-slug-generator/blob/master/test/integration/grails/plugins/SlugGeneratorTests.groovy).
