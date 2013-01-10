@@ -59,3 +59,7 @@ The plugin also includes a SlugCodec that you can call like the other Grails bui
 assert "ivan-lopez" == "Iván López!!".encodeAsSlug()
 ```
 
+Version info
+------------
+0.1 - 02/Aug/2012 - Initial version
+0.2 - 11/Jan/2013 - Fixed issue with some characters like '¿' and '¡'
