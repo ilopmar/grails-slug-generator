@@ -1,7 +1,7 @@
 package grails.plugins
 
 import static org.junit.Assert.*
-import grails.test.mixin.Mock;
+import grails.test.mixin.Mock
 
 import org.junit.*
 
@@ -66,5 +66,11 @@ class SlugGeneratorTests {
     @Test
     void 'Right-to-left writing'() {
         assert "مرحبا-قذيفة" == slugGeneratorService.generateSlug(grails.plugins.DummyDomainClass.class, "name", "مرحبا قذيفة")
+    }
+
+    //https://github.com/lmivan/grails-slug-generator/issues/2
+    @Test
+    void 'Generate a slug with punctuation characters'() {
+        assert "1" == slugGeneratorService.generateSlug(grails.plugins.DummyDomainClass.class, "name", "1\\!|\"@·#()='?¡¿")
     }
 }

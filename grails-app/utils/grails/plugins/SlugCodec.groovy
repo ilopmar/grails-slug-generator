@@ -10,9 +10,9 @@ class SlugCodec {
 
     static encode = { str ->
         
-        Pattern p = Pattern.compile("\\p{InCombiningDiacriticalMarks}+", Pattern.UNICODE_CASE);
-        Pattern p2 = Pattern.compile("\\p{Punct}+", Pattern.UNICODE_CASE);
-        Pattern p3 = Pattern.compile("\\s+", Pattern.UNICODE_CASE);
+        Pattern p = Pattern.compile("\\p{InCombiningDiacriticalMarks}+", Pattern.UNICODE_CASE)
+        Pattern p2 = Pattern.compile("\\p{Punct}+[¡¿·]*", Pattern.UNICODE_CASE)
+        Pattern p3 = Pattern.compile("\\s+", Pattern.UNICODE_CASE)
 
         // Decompose any funny characters.
         def link = Normalizer.normalize(str, Normalizer.Form.NFD)
