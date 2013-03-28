@@ -7,9 +7,7 @@ import java.util.regex.Pattern
  * Generate an slug for the passed string
  */
 class SlugCodec {
-
-    static encode = { str ->
-        
+    static String encode(str) {
         Pattern p = Pattern.compile("\\p{InCombiningDiacriticalMarks}+", Pattern.UNICODE_CASE)
         Pattern p2 = Pattern.compile("\\p{Punct}+[¡¿·]*", Pattern.UNICODE_CASE)
         Pattern p3 = Pattern.compile("\\s+", Pattern.UNICODE_CASE)
