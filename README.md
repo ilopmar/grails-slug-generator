@@ -16,12 +16,11 @@ The typical use case is to automatically set the slug when inserting a new domai
 
 ``` groovy
 class Dummy {
-    
     def slugGeneratorService
-    
+
     String name
     String slug = ""
-    
+
     def beforeInsert() {
         this.slug = slugGeneratorService.generateSlug(this.class, "slug", name)
     }
@@ -49,6 +48,23 @@ assert dummy2.slug == "ivan-lopez-1"
 ```
 
 The plugin supports full UTF-8, so you can use, for instance, ciryllic chars or right-to-left writing. Check out [the tests](https://github.com/lmivan/grails-slug-generator/blob/master/test/integration/grails/plugins/SlugGeneratorTests.groovy) for more examples.
+
+But, if you need only ascii slugs, you can activate a strict mode that filters all non ascii characters.
+
+``` groovy
+class Dummy {
+    // [...]
+    def beforeInsert() {
+        this.slug = slugGeneratorService.generateSlug(this.class, "slug", name, true)
+    }
+
+    def beforeUpdate() {
+        if (isDirty('name')) {
+            this.slug = slugGeneratorService.generateSlug(this.class, "slug", name, true)
+        }
+    }
+}
+```
 
 Additional codec
 ----------------
