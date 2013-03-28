@@ -13,10 +13,10 @@ class SlugCodec {
         Pattern p3 = Pattern.compile("\\s+", Pattern.UNICODE_CASE)
 
         // Decompose any funny characters.
-        def link = Normalizer.normalize(str, Normalizer.Form.NFD)
-                .replaceAll(p, '') // remove all the diacritic marks
+        def link = Normalizer.normalize(str, Normalizer.Form.NFKD)
+                .replaceAll(p, '')          // remove all the diacritic marks
                 .replaceAll(p2, ' ').trim() // transform the punctuation into spaces first, so that we can trim some ending or beginning punctuation
-                .replaceAll(p3, '-') // and replace all the whitespace with a dash.
+                .replaceAll(p3, '-')        // and replace all the whitespace with a dash.
                 .toLowerCase()
 
         return link
