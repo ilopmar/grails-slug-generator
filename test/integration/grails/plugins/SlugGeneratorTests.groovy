@@ -46,30 +46,4 @@ class SlugGeneratorTests {
     void 'Generate another slug'() {
         assert "another-value-2" == slugGeneratorService.generateSlug(grails.plugins.DummyDomainClass.class, "name", "aNoTher.vaLue")
     }
-
-    @Test
-    void 'Generate another slug with diacritical characters'() {
-        assert "aeiou-aeiou-nn-cc" == slugGeneratorService.generateSlug(grails.plugins.DummyDomainClass.class, "name", "áéíóú.äëïöü!ñÑ%çÇ")
-    }
-
-    @Test
-    void 'Generate another slug with special characters'() {
-        assert "a-b-c" == slugGeneratorService.generateSlug(grails.plugins.DummyDomainClass.class, "name", "a\$%/&(b)?*!c")
-    }
-
-    @Test
-    void 'Cyrillic chars'() {
-        assert "иван" == slugGeneratorService.generateSlug(grails.plugins.DummyDomainClass.class, "name", "Иван")
-    }
-
-    @Test
-    void 'Right-to-left writing'() {
-        assert "مرحبا-قذيفة" == slugGeneratorService.generateSlug(grails.plugins.DummyDomainClass.class, "name", "مرحبا قذيفة")
-    }
-
-    //https://github.com/lmivan/grails-slug-generator/issues/2
-    @Test
-    void 'Generate a slug with punctuation characters'() {
-        assert "1" == slugGeneratorService.generateSlug(grails.plugins.DummyDomainClass.class, "name", "1\\!|\"@·#()='?¡¿")
-    }
 }
