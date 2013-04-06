@@ -14,7 +14,7 @@ class SlugCodec {
 
     static def charMap = ["æ":"ae", "ß":"ss", "ø":"o", "ĸ":"k"];
 
-    static String encode(String str, Boolean asciiOnly=false) {
+    static String encode(String str, Boolean asciiOnly = false) {
         if (str.isEmpty()) {
             return "";
         }

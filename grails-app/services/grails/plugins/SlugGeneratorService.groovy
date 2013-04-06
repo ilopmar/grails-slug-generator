@@ -22,7 +22,7 @@ class SlugGeneratorService {
      * @param strict Activates the strict mode (default false).
      * @return The unique slug generated or null if there is an error.
      */
-    public String generateSlug(Class theClazz, String property, String value, Boolean strict=false) {
+    public String generateSlug(Class theClazz, String property, String value, Boolean strict = false) {
         // Check if the class if a DomainClass
         if (!grailsApplication.isArtefactOfType("Domain", theClazz)) {
             return null
