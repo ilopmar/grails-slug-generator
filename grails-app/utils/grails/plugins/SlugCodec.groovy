@@ -12,11 +12,11 @@ class SlugCodec {
     static Pattern whitespacesPattern = Pattern.compile("\\s+", Pattern.UNICODE_CASE)
     static Pattern asciiPattern = Pattern.compile("[^\\p{ASCII}a-z0-9]",  Pattern.UNICODE_CASE)
 
-    static def charMap = ["æ":"ae", "ß":"ss", "ø":"o", "ĸ":"k"];
+    static def charMap = ["æ":"ae", "ß":"ss", "ø":"o", "ĸ":"k"]
 
     static String encode(String str, Boolean asciiOnly = false) {
         if (str.isEmpty()) {
-            return "";
+            return ""
         }
 
         str = translate(str.toLowerCase())
@@ -28,7 +28,7 @@ class SlugCodec {
     }
 
     private static String castToAscii(String str) {
-        return str.replaceAll(asciiPattern, "");
+        return str.replaceAll(asciiPattern, "")
     }
 
     private static String removeWhitespaces(String str) {
@@ -44,8 +44,8 @@ class SlugCodec {
 
     private static String translate(String str) {
         charMap.each { k, v ->
-            str = str.replaceAll(k, v);
+            str = str.replaceAll(k, v)
         }
-        return str;
+        return str
     }
 }
