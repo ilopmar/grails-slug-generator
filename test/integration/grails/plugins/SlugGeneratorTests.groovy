@@ -46,4 +46,9 @@ class SlugGeneratorTests {
     void 'Generate another slug'() {
         assert "another-value-2" == slugGeneratorService.generateSlug(grails.plugins.DummyDomainClass.class, "name", "aNoTher.vaLue")
     }
+
+    @Test
+    void "Generate slug with strict mode"() {
+        assert "foo-kk" == slugGeneratorService.generateSlug(grails.plugins.DummyDomainClass.class, "name", "foo “kk“",  true)
+    }
 }
