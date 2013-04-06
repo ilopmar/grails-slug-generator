@@ -86,4 +86,16 @@ class SlugCodecTests {
     void "regression test #2"() {
         assert "1" == SlugCodec.encode("1\\!|\"@·#()='?¡¿")
     }
+
+    // https://github.com/lmivan/grails-slug-generator/issues/4
+    @Test
+    void "regressiont test #4 - unicode mode"() {
+        assert "ae-o-h-ae" == SlugCodec.encode("æ³o & h³æ")
+    }
+
+    // https://github.com/lmivan/grails-slug-generator/issues/4
+    @Test
+    void "regressiont test #4 - asciiOnly mode"() {
+        assert "aeo-hae" == SlugCodec.encode("æ³o & h³æ", true)
+    }
 }
