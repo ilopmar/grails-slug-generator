@@ -80,3 +80,4 @@ Version info
 
 * 0.1 - 02/Aug/2012 - Initial version
 * 0.2 - 11/Jan/2013 - Fixed issue with some characters like '¿' and '¡'
+* 0.3 - 06/Apr/2013 - Fixed issue #4 and added additional param to generate ascii-only slugs. Thanks [@niwibe](https://github.com/niwibe) for the pull-requests
