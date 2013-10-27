@@ -1,6 +1,8 @@
 Grails-slug-generator
 =====================
 
+![Still maintained](http://stillmaintained.com/lmivan/grails-slug-generator.png)
+
 This plugin generates unique slugs for String properties. Its main use case is to generate unique and nice names for domain instances that can be used in URLs, such as `/user/show/<slug>`.
 
 For example, instead of having a URL like http://www.domain.com/user/25 with a number identifying the user, you can generate a unique URL based on the user's name: http://www.domain.com/user/ivan-lopez (from name Iván López).
