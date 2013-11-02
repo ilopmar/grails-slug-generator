@@ -19,9 +19,9 @@ class SlugGeneratorGrailsPlugin {
     def author = "Iván López"
     def authorEmail = "lopez.ivan@gmail.com"
     def description = '''\
-This plugin generate unique slugs for String properties. Its main use case is to generate unique an "nice" urls for access to domain objects. 
+This plugin generates unique slugs for String properties. Its main use case is to generate unique and "nice" URLs for accessing domain objects. 
 
-For example, instead of access to a user profile by id http://www.domain.com/user/25 you can generate an unique url based in the user name: http://www.domain.com/user/ivan-lopez (in case the user name is Iván López). 
+For example, instead of accessing a user profile by its id (http://www.domain.com/user/25) you can generate an unique URL based on the user's name: http://www.domain.com/user/ivan-lopez (in case the user name is Iván López). 
 '''
 
     // URL to the plugin's documentation
