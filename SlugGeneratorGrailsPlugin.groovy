@@ -19,9 +19,9 @@ class SlugGeneratorGrailsPlugin {
     def author = "Iván López"
     def authorEmail = "lopez.ivan@gmail.com"
     def description = '''\
-This plugin generates unique slugs for String properties. Its main use case is to generate unique and "nice" URLs for accessing domain objects. 
+This plugin generates unique slugs for String properties. Its main use case is to generate unique and "nice" URLs for accessing domain objects.
 
-For example, instead of accessing a user profile by its id (http://www.domain.com/user/25) you can generate an unique URL based on the user's name: http://www.domain.com/user/ivan-lopez (in case the user name is Iván López). 
+For example, instead of accessing a user profile by its id (http://www.domain.com/user/25) you can generate an unique URL based on the user's name: http://www.domain.com/user/ivan-lopez (in case the user name is Iván López).
 '''
 
     // URL to the plugin's documentation
@@ -44,34 +44,4 @@ For example, instead of accessing a user profile by its id (http://www.domain.co
     // Online location of the plugin's browseable source code.
     def scm = [ url: "https://github.com/lmivan/grails-slug-generator" ]
 
-    def doWithWebDescriptor = { xml ->
-        // TODO Implement additions to web.xml (optional), this event occurs before
-    }
-
-    def doWithSpring = {
-        // TODO Implement runtime spring config (optional)
-    }
-
-    def doWithDynamicMethods = { ctx ->
-        // TODO Implement registering dynamic methods to classes (optional)
-    }
-
-    def doWithApplicationContext = { applicationContext ->
-        // TODO Implement post initialization spring config (optional)
-    }
-
-    def onChange = { event ->
-        // TODO Implement code that is executed when any artefact that this plugin is
-        // watching is modified and reloaded. The event contains: event.source,
-        // event.application, event.manager, event.ctx, and event.plugin.
-    }
-
-    def onConfigChange = { event ->
-        // TODO Implement code that is executed when the project configuration changes.
-        // The event is the same as for 'onChange'.
-    }
-
-    def onShutdown = { event ->
-        // TODO Implement code that is executed when the application shuts down (optional)
-    }
 }
