@@ -86,3 +86,7 @@ Version info
 * 0.2 - 11/Jan/2013 - Fixed issue with some characters like '¿' and '¡'
 * 0.3 - 06/Apr/2013 - Fixed issue #4 and added additional param to generate ascii-only slugs. Thanks [@niwibe](https://github.com/niwibe) for the pull-requests
 * 0.3.1 - 06/Apr/2013 - Removed unnecessary maven repositories
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/lmivan/grails-slug-generator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
