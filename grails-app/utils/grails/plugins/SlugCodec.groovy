@@ -12,7 +12,7 @@ class SlugCodec {
     static Pattern whitespacesPattern = Pattern.compile("\\s+", Pattern.UNICODE_CASE)
     static Pattern asciiPattern = Pattern.compile("[^\\p{ASCII}a-z0-9]",  Pattern.UNICODE_CASE)
 
-    static def charMap = ["æ":"ae", "ß":"ss", "ø":"o", "ĸ":"k"]
+    static def charMap = ["æ":"ae", "ß":"ss", "ø":"o", "ĸ":"k", "Ł":"L", "ł":"l"]
 
     static encode = { String str, Boolean asciiOnly = false ->
         if (str.isEmpty()) {
