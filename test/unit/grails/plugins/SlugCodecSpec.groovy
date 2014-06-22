@@ -61,4 +61,10 @@ class SlugCodecSpec extends Specification {
             SlugCodec.encode("æ³o & h³æ") == "ae-o-h-ae"
             SlugCodec.encode("æ³o & h³æ", true) == "aeo-hae"
     }
+
+    @Issue("https://github.com/lmivan/grails-slug-generator/issues/10")
+    void "slugify some polish characters"() {
+        expect:
+            SlugCodec.encode("Pchnąć w tę łódź jeża lub ośm skrzyń fig") == "pchnac-w-te-lodz-jeza-lub-osm-skrzyn-fig"
+    }
 }
