@@ -1,0 +1,15 @@
+language: groovy
+jdk:
+  - openjdk7
+
+script:
+  - ./grailsw refresh-dependencies --non-interactive
+  - ./grailsw test-app
+
+notifications:
+  email:
+    recipients:
+      - lopez.ivan@gmail.com
+
+    on_success: change
+    on_failure: change
