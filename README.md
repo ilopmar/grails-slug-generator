@@ -3,7 +3,6 @@ Grails-slug-generator
 
 [![Build Status](https://travis-ci.org/lmivan/grails-slug-generator.svg?branch=master)](https://travis-ci.org/lmivan/grails-slug-generator)
 [![Still maintained](http://stillmaintained.com/lmivan/grails-slug-generator.png)](http://stillmaintained.com/lmivan/grails-slug-generator)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/lmivan/grails-slug-generator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 This plugin generates unique slugs for String properties. Its main use case is to generate unique and nice names for domain instances that can be used in URLs, such as `/user/show/<slug>`.
 
