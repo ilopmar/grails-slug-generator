@@ -5,6 +5,11 @@ import spock.lang.*
 
 class SlugCodecSpec extends Specification {
 
+    void "slugify an empty string"() {
+        expect:
+            SlugCodec.encode("") == ""
+    }
+
     void "slugify string with spaces"() {
         expect:
             SlugCodec.encode("One Value") == "one-value"
