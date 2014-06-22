@@ -4,7 +4,7 @@ jdk:
 
 script:
   - ./grailsw refresh-dependencies --non-interactive
-  - ./grailsw test-app
+  - ./grailsw test-app -coverage -xml
 
 notifications:
   email:
@@ -13,3 +13,6 @@ notifications:
 
     on_success: change
     on_failure: change
+
+after_success:
+  - ./grailsw coveralls
