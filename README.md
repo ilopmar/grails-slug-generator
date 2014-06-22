@@ -82,7 +82,8 @@ assert "ivan-lopez" == "Iván López!!".encodeAsSlug()
 Version info
 ------------
 
-* 0.1 - 02/Aug/2012 - Initial version
+* 0.4 - 22/Jun/2014 - Fixed issue with some polish characters. Thanks to Piotr `Athlan` Pelczar.
+* 0.3.1 - 06/Apr/2013 - Removed unnecessary maven repositories.
+* 0.3 - 06/Apr/2013 - Fixed issue #4 and added additional param to generate ascii-only slugs. Thanks [@niwibe](https://github.com/niwibe) for the pull-requests.
 * 0.2 - 11/Jan/2013 - Fixed issue with some characters like '¿' and '¡'
-* 0.3 - 06/Apr/2013 - Fixed issue #4 and added additional param to generate ascii-only slugs. Thanks [@niwibe](https://github.com/niwibe) for the pull-requests
-* 0.3.1 - 06/Apr/2013 - Removed unnecessary maven repositories
+* 0.1 - 02/Aug/2012 - Initial version.
