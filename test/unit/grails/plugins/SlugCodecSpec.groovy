@@ -10,6 +10,11 @@ class SlugCodecSpec extends Specification {
             SlugCodec.encode("") == ""
     }
 
+    void "slugify an null string"() {
+        expect:
+            SlugCodec.encode(null) == ""
+    }
+
     void "slugify string with spaces"() {
         expect:
             SlugCodec.encode("One Value") == "one-value"
