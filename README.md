@@ -1,8 +1,7 @@
 Grails-slug-generator
 =====================
 
-[![Build Status](https://travis-ci.org/lmivan/grails-slug-generator.svg?branch=master)](https://travis-ci.org/lmivan/grails-slug-generator)
-[![Still maintained](http://stillmaintained.com/lmivan/grails-slug-generator.png)](http://stillmaintained.com/lmivan/grails-slug-generator)
+[![Build Status](https://travis-ci.org/ilopmar/grails-slug-generator.svg?branch=master)](https://travis-ci.org/lmivan/grails-slug-generator)
 [![Coverage Status](https://coveralls.io/repos/lmivan/grails-slug-generator/badge.png?branch=master)](https://coveralls.io/r/lmivan/grails-slug-generator?branch=master)
 
 This plugin generates unique slugs for String properties. Its main use case is to generate unique and nice names for domain instances that can be used in URLs, such as `/user/show/<slug>`.
