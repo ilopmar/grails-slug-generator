@@ -1,6 +1,7 @@
 package grails.plugins
 
-import org.codehaus.groovy.grails.commons.DefaultGrailsDomainClass
+import org.grails.core.DefaultGrailsDomainClass
+
 
 class SlugGeneratorService {
     static transactional = false
@@ -25,6 +26,7 @@ class SlugGeneratorService {
     public String generateSlug(Class theClazz, String property, String value, Boolean strict = false) {
         // Check if the class if a DomainClass
         if (!grailsApplication.isArtefactOfType("Domain", theClazz)) {
+            println "not a domain"
             return null
         }
 
@@ -34,6 +36,7 @@ class SlugGeneratorService {
         // Check if the class has the property
         def persistentProperty = grailsClass.getPersistentProperty(property)
         if (!persistentProperty) {
+            println "not persistence"
             return null
         }
 
