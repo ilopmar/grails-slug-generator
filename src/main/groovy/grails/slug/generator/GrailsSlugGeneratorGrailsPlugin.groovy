@@ -3,6 +3,7 @@ package grails.slug.generator
 import grails.plugins.*
 
 class GrailsSlugGeneratorGrailsPlugin extends Plugin {
+//    def version = "1.0"
 
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "3.0.0 > *"
