@@ -1,4 +1,4 @@
-package grails.slug.generator
+package grails.plugins
 
 import org.grails.core.DefaultGrailsDomainClass
 

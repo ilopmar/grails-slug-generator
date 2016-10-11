@@ -1,4 +1,4 @@
-package grails.slug.generator
+package grails.plugins
 
 import grails.plugin.spock.*
 import spock.lang.Issue

@@ -1,4 +1,4 @@
-package grails.slug.generator
+package grails.plugins
 
 import java.text.Normalizer
 import java.util.regex.Pattern

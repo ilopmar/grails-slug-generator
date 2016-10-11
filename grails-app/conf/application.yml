@@ -2,7 +2,7 @@
 grails:
     profile: web-plugin
     codegen:
-        defaultPackage: grails.slug.generator
+        defaultPackage: grails.plugins
     spring:
         transactionManagement:
             proxies: false
