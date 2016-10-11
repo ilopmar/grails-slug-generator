@@ -12,8 +12,8 @@ buildscript {
     }
 }
 
-version "0.1"
-group "grails.slug.generator"
+version "0.6"
+group "org.grails.plugins"
 
 apply plugin:"eclipse"
 apply plugin:"idea"
