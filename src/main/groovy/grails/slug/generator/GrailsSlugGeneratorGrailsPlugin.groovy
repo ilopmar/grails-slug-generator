@@ -46,7 +46,7 @@ For example, instead of accessing a user profile by its id (http://www.domain.co
 //    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
 
     // Online location of the plugin's browseable source code.
-//    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
+    def scm = [ url: "https://github.com/lmivan/grails-slug-generator" ]
 
     Closure doWithSpring() { {->
             // TODO Implement runtime spring config (optional)
